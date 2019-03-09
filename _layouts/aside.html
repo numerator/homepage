@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid" id="header">
+      <div class="container centered">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+              <img class="main-photo" src="img/2017_newman_mark_110x110.jpg" width="150"/>
+            </div>
+
+            <div class="col-md-3 col-sm-6 ">
+              <h2>Mark W. Newman</h2>
+              Associate Professor <br/>
+              School of Information & EECS
+            </div>
+
+            <div class="col-md-3 col-sm-6 ">
+              <h2>Contact </h2>
+              e: mwnewman@umich.edu <br/><br/>
+              <h2>Office Hours </h2>
+              Wednesdays, maybe
+            </div>
+
+            <div class="col-md-3 col-sm-6 ">
+              <h2>Associations</h2>
+                <ul>
+                  <li>inteco</li>
+                  <li>MISC</li>
+                  <li>UMSI</li>
+                  <li>AVR</li>
+                </ul>
+            </div>
+
+        </div>
+      </div>
+    </div> <!-- end header -->
+
+
+    <h2>People</h2>
+    {% for person in site.data.people %}
+      <div>
+        <img src="{{person.img}}"/ width="150"><br/>
+        <a href="{{person.site}}">
+          {{ person.name }}
+        </a>
+      </div>
+    {% endfor %}
+
+    <h2>Publications</h2>
+    {% for pub in site.data.pubs %}
+      <div>
+        <a href="{{pub.pdf}}">
+          <b>{{ pub.title }}.</b></a> {{ pub.authors }}. <i>{{ pub.venue }}.</i> {{ pub.year }}
+        </a>
+      </div>
+    {% endfor %}
+
+
+    <section>
+      {{ content }}
+    </section>
+    <br/>
+    <br/>
+
+    {% capture my_include %}{% include aboutme.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+    
+    <footer>
+      &copy; Mark W. Newman / University of Michigan
+      </br>
+      Site built on
+      {{ site.time | date: "%B %d, %Y")}}
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Why is this at the bottom>? Seems like it should be earlier? -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  </body>
+</html>

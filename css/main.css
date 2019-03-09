@@ -1,0 +1,56 @@
+#header {
+  font-size: 12px;
+  background-color: orange;
+  padding: 20px;
+}
+
+#left-bar {
+  font-size: 12px;
+  color: white;
+  background-color: #484C5B;
+  padding: 20px;
+  text-align: right;
+}
+
+#left-bar a {
+  color: #B8EBEF;
+
+
+}
+
+#footer {
+  font-size: 10px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.headroom {
+  margin-top: 20px;
+}
+
+.main-photo {
+    text-align: right;
+    width: 80%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* .centered {
+  max-width: 800px;
+  margin: 0 auto;
+} */
+
+.center-align {
+  text-align: center;
+}
