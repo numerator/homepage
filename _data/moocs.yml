@@ -1,0 +1,38 @@
+- name: "Introduction to User Experience Principles and Processes"
+  url: "https://online.umich.edu/courses/introduction-to-user-experience-principles-and-processes/"
+  spec: "UX Research & Design Specialization"
+  specurl: "https://online.umich.edu/series/user-experience-research-and-design/"
+  host: "Coursera"
+
+- name: "Evaluating Designs with Users"
+  url: "https://online.umich.edu/courses/evaluating-designs-with-users/"
+  spec: "UX Research & Design Specialization"
+  specurl: "https://online.umich.edu/series/user-experience-research-and-design/"
+  host: "Coursera"
+
+
+- name: "User Experience Capstone"
+  url: "https://online.umich.edu/courses/ux-user-experience-capstone/"
+  spec: "UX Research & Design Specialization"
+  specurl: "https://online.umich.edu/series/user-experience-research-and-design/"
+  host: "Coursera"
+
+- name: "Introduction to User Experience Research and Design"
+  spec: "UX Research & Design MicroMasters"
+  host: "edX"
+  note: "(no longer available)"
+
+- name: "Principles of Designing for Humans"
+  spec: "UX Research & Design MicroMasters"
+  host: "edX"
+  note: "(no longer available)"
+
+- name: "Evaluating Designs with Users"
+  spec: "UX Research & Design MicroMasters"
+  host: "edX"
+  note: "(no longer available)"
+
+- name: "User Experience Research & Design Capstone"
+  spec: "UX Research & Design MicroMasters"
+  host: "edX"
+  note: "(no longer available)"

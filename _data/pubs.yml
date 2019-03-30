@@ -1,0 +1,155 @@
+
+# Health
+
+- title: "\"My blood sugar is higher on the weekends\": Finding a Role for Context and Context-Awareness in the Design of Health Self-Management Technology"
+  authors: "Shriti Raj, Kelsey Toporski, Ashley Garrity, Joyce M. Lee, Mark W. Newman"
+  year: 2019
+  publication: "Proceedings of the ACM SIGCHI Conference on Human Factors in Computing Systems (CHI 2019)"
+  shortpub: "CHI 2019"
+  toappear: true
+  fulltext: "chi2019-contextframes.pdf"
+  category: "health"
+
+- title: "Finding the Sweet Spot(s): Understanding Context to Support Physical Activity Plans"
+  authors: "Gaurav Paruthi, Shriti Raj, Natalie Colabianchi, Predrag Klasnja, and Mark W. Newman"
+  year: 2018
+  publication: "Proceedings of the ACM on Interactive, Mobile, Wearable, and Ubiquitous Technologies (IMWUT) 2:1"
+  shortpub: "Ubicomp 2018"
+  puburl: "https://dl.acm.org/citation.cfm?id=3191761"
+  fulltext: "ubicomp2018-sweetspots.pdf"
+  category: "health"
+
+- title: "Understanding Individual and Collaborative Problem-Solving with Patient-Generated Data: Challenges and Opportunities"
+  authors: "Shriti Raj, Mark W Newman, Joyce M Lee, and Mark S Ackerman"
+  year: 2017
+  publication: "Proceedings of the ACM on Human-Computer Interaction 1:CSCW"
+  puburl: "https://dl.acm.org/citation.cfm?id=3134723"
+  fulltext: "cscw2018-pgd.pdf"
+  category: "health"
+
+- title: "Design considerations for semi-automated tracking: self-care plans in spinal cord injury"
+  authors: "Ayşe G Büyüktür, Mark S Ackerman, Mark W Newman, Pei-Yao Hung"
+  year: 2017
+  publication: "Proceedings of the 11th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth '17)"
+  puburl: "https://dl.acm.org/citation.cfm?id=3154870"
+  fulltext: "pervasivehealth2017_sci+semiauto.pdf"
+  category: "health"
+
+- title: "Fostering engagement with personal informatics systems"
+  authors: "Rebecca Gulotta, Jodi Forlizzi, Rayoung Yang, Mark W. Newman"
+  year: 2016
+  publication: "Proceedings of the 2016 ACM Conference on Designing Interactive Systems (DIS 2016)"
+  puburl: "https://dl.acm.org/citation.cfm?id=2901803"
+  fulltext: "dis2016_longtermengage.pdf"
+  category: "health"
+
+# Smart Homes and Sustainability
+
+- title: "Devices and Data and Agents, Oh My: How Smart Home Abstractions Prime End-User Mental Models"
+  authors: "Meghan Clark, Mark W. Newman, and Prabal Dutta"
+  year: 2017
+  publication: "Proceedings of ACM Interactive, Mobile, Wearable, and Ubiquitous Technologies (IMWUT)"
+  puburl: "https://dl.acm.org/citation.cfm?id=3132031"
+  volume: 1
+  issue: 3
+  fulltext: "ubicomp2017-smarthomeabstractions.pdf"
+  category: "smarthome"
+
+- title: "Reef: Exploring the Design Opportunity of Comfort-Aware Eco-Coaching Thermostats"
+  authors: "Chuan-Che Huang, Sheng-Yuan Liang, Bing-Hsun Wu, Mark W Newman"
+  year: 2017
+  publication: "Proceedings of the 2017 ACM Conference on Designing Interactive Systems (DIS 2017)"
+  puburl: "https://dl.acm.org/citation.cfm?id=3064685"
+  fulltext: "dis2017-reef.pdf"
+  category: "smarthome"
+
+- title: "How Does Eco-coaching Help to Save Energy? Assessing a Recommendation System for Energy-efficient Thermostat Scheduling"
+  authors: "Rayoung Yang, Devika Pisharoty, Soodeh Montazeri, Kamin Whitehouse, and Mark W Newman"
+  year: 2016
+  publication: "Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing (Ubicomp 2016)"
+  puburl: "https://dl.acm.org/citation.cfm?id=2971698"
+  fulltext: "ubicomp2016_thermocoach.pdf"
+  category: "smarthome"
+
+- title: "ThermoCoach: Reducing Home Energy Consumption with Personalized Thermostat Recommendations"
+  authors: "Devika Pisharoty, Rayoung Yang, Mark W. Newman, and Kamin Whitehouse"
+  publication: "Proceedings of the 2nd ACM International Conference on Embedded Systems for Energy-Efficient Built Environments (BuildSys 2015)"
+  year: 2015
+  puburl: "https://dl.acm.org/citation.cfm?id=2821671"
+  fulltext: "ubicomp2016_thermocoach.pdf"
+  category: "smarthome"
+
+- title: "The Potential and Challenges of Inferring Thermal Comfort at Home Using Commodity Sensors,"
+  authors: "Chuan-Che Huang, Rayoung Yang, and Mark W. Newman"
+  publication: "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2015)"
+  year: 2015
+  puburl: "https://dl.acm.org/citation.cfm?id=2805831"
+  fulltext: "ubicomp2015-thermalcomfort.pdf"
+  category: "smarthome"
+
+- title: "Making Sustainability Sustainable: Challenges in the Design of Eco-interaction Technologies"
+  authors: "Rayoung Yang, Mark W. Newman, and Jodi Forlizzi"
+  publication: "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems"
+  year: 2014
+  puburl: "https://dl.acm.org/citation.cfm?id=2557380"
+  fulltext: "chi2014-makingsustainable.pdf"
+  category: "smarthome"
+
+- authors: "Rayoung Yang and Mark W. Newman"
+  title: "Learning from a Learning Thermostat: Lessons for Intelligent Systems for the Home"
+  publication: "Proceedings of the 2013 ACM International Joint Conference on Pervasive and Ubiquitous Computing"
+  year: 2013
+  puburl: "https://dl.acm.org/citation.cfm?id=2493489"
+  fulltext: "ubicomp2013-learningtherm.pdf"
+  category: "smarthome"
+
+# Principles, Tools, and Techniques for Designing Ubicomp Technologies
+
+- title: "Heed: Exploring the Design of Situated Self-Reporting Devices"
+  authors: "Gaurav Paruthi, Shriti Raj, Seungjoo Baek, Chuyao Wang, Chuan-Che Huang, Yung-Ju Chang, Mark W. Newman"
+  publication: "Procesdings of the ACM on Intertactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
+  year: 2018
+  puburl: "https://dl.acm.org/citation.cfm?id=3123162"
+  fulltext: "imwut2018-heed.pdf"
+  category: "principles"
+
+- authors: "Yung-Ju Chang, Gaurav Paruthi, Hsin-Ying Wu, Hsin-Yu Lin, and Mark W. Newman"
+  title: "An investigation of using mobile and situated crowdsourcing to collect annotated travel activity data in real-word settings"
+  publication: "International Journal of Human-Computer Studies (IJHCS)"
+  volume: 102
+  year: 2017
+  puburl: "https://www.sciencedirect.com/science/article/abs/pii/S1071581916301525"
+  fulltext: "ijhcs2017-annotatedcapture.pdf"
+  category: "principles"
+
+- authors: "Yung-Ju Chang, Gaurav Paruthi, and Mark W. Newman"
+  title: "A Field Study Comparing Approaches to Collecting Annotated Activity Data in Real-world Settings"
+  publication: "Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing (Ubicomp 2015)"
+  year: 2015
+  puburl: "https://dl.acm.org/citation.cfm?id=2807524"
+  fulltext: "ubicomp2015-labelling.pdf"
+  category: "principles"
+
+- authors: "Jared S. Bauer, Mark W. Newman, and Julie A. Kientz"
+  title: "What Designers Talk About When They Talk About Context"
+  publication: "Human–Computer Interaction"
+  year: 2014
+  puburl: "https://www.tandfonline.com/doi/abs/10.1080/07370024.2014.896709"
+  fulltext: "hci2014-designerstalkcontext.pdf"
+  category: "principles"
+
+- authors: "Yung-Ju Chang, Pei-Yao Hung, and Mark W. Newman"
+  title: "TraceViz: ‘brushing’ for location based services"
+  publication: "Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services companion"
+  year: 2012
+  puburl: "https://dl.acm.org/citation.cfm?id=2371628"
+  fulltext: "mHCI2012-traceviz.pdf"
+  category: "principles"
+
+- authors: "Mark W. Newman, Mark S. Ackerman, Jungwoo Kim, Atul Prakash, Zhenan Hong, Jacob Mandel, and Tao Dong"
+  title: "Bringing the field into the lab: supporting capture and replay of contextual data for the design of context-aware applications"
+  publication: "Proceedings of the 23nd annual ACM symposium on User interface software and technology (UIST 2010)"
+  year: 2010
+  puburl: "https://dl.acm.org/citation.cfm?id=1866048"
+  fulltext: "uist2010-replay.pdf"
+  category: "principles"

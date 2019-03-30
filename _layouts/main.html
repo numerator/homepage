@@ -20,6 +20,11 @@
 
   <body>
 
+    {% capture aboutme %}{% include aboutme.md %}{% endcapture %}
+    {% capture research %}{% include research.md %}{% endcapture %}
+    {% capture workwith %}{% include workwith.md %}{% endcapture %}
+    {% capture teaching %}{% include teaching.md %}{% endcapture %}
+
     <div class="container-fluid"> <!-- container for the whole page -->
       <div class="row"> <!-- row for the whole page -->
         <div class="col-md-2" id="left-bar">
@@ -29,7 +34,7 @@
           <br/>
 
           <h2>{{site.data.me.name}}</h2>
-          {{site.data.me.name}} <br/>
+          {{site.data.me.title}} <br/>
           {{site.data.me.affiliation}}<br/>
           {{site.data.me.affiliation2}} <br/>
           {{site.data.me.org}}<br/>
@@ -48,33 +53,73 @@
 
           <h2>Associations</h2>
           {% for assoc in site.data.assoc %}
-            <a href="{{assoc.url}}">{{assoc.displayname}}</a><br/>
+            <a target="_blank" href="{{assoc.url}}">{{assoc.displayname}}</a><br/>
           {% endfor %}
 
         </div> <!-- left bar -->
 
         <div class="col-md-10" id="right-content-area">
-
           <div class="row" id="two-column-area">
-            <div class="col-md-5" id="left-column">
+            <div class="col-md-6" id="left-column">
               <h1>About Me</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt.
+                {{ aboutme | markdownify }}
               </p>
-            </div> <!-- left column -->
-
-            <div class="col-md-5" id="right-column">
               <h1>Research</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                {{ research | markdownify }}
+              </p>
+
+              <h1>Work with me!</h1>
+              <p>
+                {{ workwith | markdownify }}
+              </p>
+
+              <h1>FAQ</h1>
+              <p>
+              {% for q in site.data.faq %}
+                <p>
+                  <b> Q: {{ q.question }} </b> <br/>
+                  A: {{ q.answer }}
+                </p>
+              {% endfor %}
+              </p>
+
+
+            </div> <!-- left column -->
+
+            <div class="col-md-6" id="right-column">
+              <h1>Teaching</h1>
+              <p>
+                {{ teaching | markdownify }}
+              </p>
+
+              <h1>Courses</h1>
+              <p>
+                {% for course in site.data.courses %}
+                <div class="tight">
+
+                  <b>{{ course.name }}</b> <br/>
+                  <span class="sm">
+                    {% for sem in course.semesters %}
+                      {% unless forloop.first %}
+                        |
+                      {% endunless %}
+                      {% if sem.syllabus %}
+                        <a target="_blank" href="{{sem.syllabus}}">
+                      {% endif %}
+
+                      {{ sem.semester }}
+
+                      {% if sem.syllabus %}
+                        </a>
+                      {% endif %}
+                    {% endfor %} <br/>
+                  </span>
+                </div>
+
+                {% endfor %}
+                <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                 natoque penatibus et magnis dis parturient montes, nascetur
                 ridiculus mus. Donec quam felis, ultricies nec, pellentesque
@@ -82,30 +127,76 @@
                 Donec pede justo, fringilla vel, aliquet nec, vulputate
                 eget, arcu. In enim justo, rhoncus ut, imperdiet a,
                 venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt.
+                pretium. Integer tincidunt. -->
+              </p>
+
+              <h1>MOOCs</h1>
+              <p>
+                {% for mooc in site.data.moocs %}
+                  <div class="tight">
+                    {% if mooc.url %}
+                      <b><a target="_blank" href="{{mooc.url}}">{{ mooc.name }}</a></b> <br/>
+                    {% else %}
+                      {{ mooc.name }}<br/>
+                    {% endif %}
+
+                    <i class="sm">
+                      {% if mooc.spec %}
+                        in
+                        {% if mooc.specurl %}
+                          <b><a target="_blank" href="{{mooc.specurl}}">{{ mooc.spec }}</a></b>
+                        {% else %}
+                          {{ mooc.spec }}
+                        {% endif %}
+                        on {{ mooc.host }}
+                      {% endif %}
+
+                      {% if mooc.note %}
+                        {{mooc.note}}
+                      {% endif %}
+                      <br/>
+                    </i>
+                  </div>
+                {% endfor %}
+
               </p>
             </div> <!-- right column -->
-
           </div> <!-- row two-column-area -->
 
           <div class="row" id="single-column-area">
 
-            <div id="selected-pubs" class="col-md-10">
+            <div id="selected-pubs" class="col-md-12">
               <h1>Selected Publications</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt.
-              </p>
+              {% octicon link-external height:16 %} = publisher's URL<br/>
+              {% octicon file-pdf height:16 %} = authors' version (full text pdf)
+            </p>
+
+              {% for pubcat in site.data.pubcats %}
+                <h2 class="sel-pub-head">{{ pubcat.displayname }}</h2>
+                <div class="tight">
+                    {% for pub in site.data.pubs %}
+                      {% if pub.category == pubcat.category %}
+                        <p>
+                          <!--b>[{{pub.shortpub}}]</b-->
+                          {{ pub.title }}. {{ pub.authors }}.
+                          <i> {{ pub.publication }}. </i>
+                           {{ pub.year }}.
+                           {% if pub.puburl %}
+                              <a target="_blank"  href="{{pub.puburl}}">{% octicon link-external height:16 %}</a>
+                           {% endif %}
+                           {% if pub.fulltext %}
+                              <a target="_blank" href="/fulltext/{{pub.fulltext}}">{% octicon file-pdf height:16 %}</a>
+                           {% endif %}
+                        </p>
+                      {% endif %}
+                    {% endfor %}
+                </div>
+              {% endfor %}
+
             </div> <!-- selected pubs -->
 
-            <div class="centered center-align col-md-10" id="footer">
+            <div class="centered center-align col-md-12" id="footer">
               <hr width="50%"/>
               Built on March 2, 2019 using Jekyll 3.x <br/>
               Copyright 2019 - Mark W. Newman

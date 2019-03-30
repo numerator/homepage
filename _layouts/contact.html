@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <title> {{ page.title }} </title> <!-- change to use site vars -->
+
+  </head>
+
+  <body>
+    <div class="container-fluid"> <!-- container for the whole page -->
+      <div class="row"> <!-- row for the whole page -->
+        <div class="col-md-2" id="left-bar">
+
+          <img class="main-photo"
+               src="img/{{ site.data.me.photo }}"/>
+          <br/>
+
+          <h2>{{site.data.me.name}}</h2>
+          {{site.data.me.title}} <br/>
+          {{site.data.me.affiliation}}<br/>
+          {{site.data.me.affiliation2}} <br/>
+          {{site.data.me.org}}<br/>
+          <br/>
+
+          <h2>Associations</h2>
+          {% for assoc in site.data.assoc %}
+            <a target="_blank" href="{{assoc.url}}">{{assoc.displayname}}</a><br/>
+          {% endfor %}
+
+        </div> <!-- left bar -->
+
+        <div class="col-md-10" id="right-content-area">
+          <h2>Which Mark Newman is right for me?</h2>
+          <p>
+            As you may or may not know, I am not the only Mark Newman at the
+            University of Michigan. Before contacting me, please make sure
+            I’m the right one for you! Please refer to this helpful guide.
+          </p>
+
+          <h2>Contact Me</h2>
+          <p>
+            email: {{site.data.me.contact_email}} <br/>
+            phone: {{site.data.me.contact_phone}} <br/>
+          </p>
+
+          <h2>Find Me</h2>
+          <p>
+            office: {{site.data.me.contact_office}} <br/>
+            Find North Quad <br/>
+            Find my office inside North Quad <br/>
+
+
+          </p>
+
+          <h2>Mark Newmans @ U-M: A Helpful Guide </h2>
+          <div class="table-responsive">
+            <table class="table compare-table">
+              <tr>
+                <td width="40%">
+                  <img class="small-photo"
+                       src="img/{{ site.data.me.photo }}"/>
+                </td>
+                <td class="center-label">
+                  Photo
+                </td>
+                <td width="40%">
+                  <img class="small-photo"
+                       src="img/{{ site.data.mejn.photo }}"/>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {{ site.data.me.name}}
+                </td>
+                <td class="center-label">
+                  Professional Name
+                </td>
+                <td>
+                  {{ site.data.mejn.name }}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {{ site.data.me.title }}
+                </td>
+                <td class="center-label">
+                  Title
+                </td>
+                <td>
+                  {{ site.data.mejn.title }}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {{ site.data.me.affiliation }} <br/>
+                  {{ site.data.me.affiliation2 }} <br/>
+                  {{ site.data.me.org }}
+                </td>
+                <td class="center-label">
+                  Affiliation
+                </td>
+                <td>
+                  {{ site.data.mejn.affiliation }} <br/>
+                  {{ site.data.mejn.affiliation2 }} <br/>
+                  {{ site.data.mejn.org }}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  {{ site.data.me.research_area }}
+                </td>
+                <td class="center-label">
+                  Research Area
+                </td>
+                <td>
+                  {{ site.data.mejn.research_area }}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="{{ site.data.me.web_page }}">Home Page</a>
+                </td>
+                <td class="center-label">
+                  Home Page
+                </td>
+                <td>
+                  <a href="{{ site.data.mejn.web_page }}">Home Page</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="{{ site.data.me.scholar_url }}">Google Scholar Profile</a>
+                </td>
+                <td class="center-label">
+                  Scholar Profile
+                </td>
+                <td>
+                  <a href="{{ site.data.mejn.scholar_url }}">Google Scholar Profile</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {{ site.data.me.contact_email }}
+                </td>
+                <td class="center-label">
+                  email
+                </td>
+                <td>
+                  {{ site.data.mejn.contact_email }}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {{ site.data.me.country_of_origin }}
+                </td>
+                <td class="center-label">
+                  Country of origin
+                </td>
+                <td>
+                  {{ site.data.mejn.country_of_origin }}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {{ site.data.me.wears_glasses }}
+                </td>
+                <td class="center-label">
+                  Wears glasses
+                </td>
+                <td>
+                  {{ site.data.mejn.wears_glasses }}
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  {{ site.data.me.election_maps }}
+                </td>
+                <td class="center-label">
+                  Makes election maps
+                </td>
+                <td>
+                  {{ site.data.mejn.election_maps }}
+                </td>
+              </tr>
+<!--
+  title
+  affiliation
+  affiliation2
+  research area
+  web Page
+  email
+  country of origin
+  glasses
+  election maps
+
+-->
+
+            </table>
+          </div>
+          <div class="centered center-align col-md-12" id="footer">
+            <hr width="50%"/>
+            Built on March 2, 2019 using Jekyll 3.x <br/>
+            Copyright 2019 - Mark W. Newman
+          </div> <!-- footer -->
+        </div>
+      </div> <!-- end columns -->
+    </div> <!-- whole page -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Why is this at the bottom? Seems like it should be earlier? -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

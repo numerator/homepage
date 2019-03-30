@@ -14,13 +14,22 @@
 
 #left-bar a {
   color: #B8EBEF;
-
-
 }
 
 #footer {
   font-size: 10px;
   padding-bottom: 50px;
+}
+
+#right-content-area {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+a {
+  color: #336699;
 }
 
 h1 {
@@ -32,6 +41,16 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+body {
+  font-size: 10pt;
+}
+
+td.center-label {
+  font-size: 8pt;
+  line-height: 10pt;
+  vertical-align: middle;
 }
 
 .headroom {
@@ -46,11 +65,44 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* .centered {
-  max-width: 800px;
-  margin: 0 auto;
-} */
+.small-photo {
+    text-align: right;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 .center-align {
   text-align: center;
+}
+
+.sm {
+  font-size: 10pt;
+  line-height: 10pt;
+}
+
+
+
+.tight {
+  margin-bottom: 6pt;
+  line-height: 14pt;
+}
+
+.small-icon {
+  vertical-align: middle;
+  width: 14px;
+  height: auto;
+}
+
+.accent {
+  color: red;
+}
+
+.sel-pub-head {
+  margin-bottom: 10px;
+}
+
+.compare-table {
+  text-align: left;
+  text-justify: inter-word;
 }

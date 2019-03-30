@@ -1,0 +1,64 @@
+- name: "SI 699-3: User-Centered Agile Development"
+  semesters:
+  - semester: "Winter 2019"
+    syllabus: "https://docs.google.com/document/d/1EBsJhqnl9ZJg6xz4otgI4kZCPIe_EKWu65YOC6pHO8U/edit?usp=sharing"
+
+- name: "SI 669: Developing the Mobile Experience"
+  semesters:
+  - semester: "Fall 2018"
+    syllabus: "https://docs.google.com/document/d/1v7GK0C1ZVT4DCNfH5No5r3ewjv1k3oEeKytKopOgGnM/edit?usp=sharing"
+
+- name: "SI 507: Intermediate Programming"
+  semesters:
+  - semester: "Winter 2018"
+    syllabus: "https://docs.google.com/document/d/1VyArmcu4Fl9nsnNSFJq6DvQTxwBr2g5msuX6W2GM3Z4/edit?usp=sharing"
+  - semester: "Winter 2017"
+    syllabus: "https://docs.google.com/document/d/1TbVmBkAnEZVvj7NyAFW38hT2XUGMouz8f5ifpdPu4oo/edit?usp=sharing"
+
+- name: "SI 206: Data-Oriented Programming"
+  semesters:
+  - semester: "Winter 2018"
+    syllabus: "https://docs.google.com/document/d/1x8Vd3WgT9jxiXjCSiauiXDLJ2p1bxwTpKp_yaedEPqw/edit?usp=sharing"
+
+- name: "SI 110: Introduction to Information Studies"
+  semesters:
+  - semester: "Fall 2017"
+    syllabus: "https://docs.google.com/document/d/1ONN_hpBScT5yee_7kZz3X8d3gEncrIyrBnst5jG8Ijc/edit?usp=sharing"
+  - semester: "Fall 2016"
+    syllabus: "https://docs.google.com/document/d/1IChd1CbLrWsBsnB_5L2Gvn7oYLhtj0Z1yjOeaR5-1XE/edit?usp=sharing"
+  - semester: "Fall 2015"
+    syllabus: "https://docs.google.com/document/d/1zlI1Ng4BCSKEtDiaK5xa7NeCQSgFkyokBzuJJ6w7eaU/edit?usp=sharing"
+
+- name: "SI 622 Needs Assessment and Usability Evaluation"
+  semesters:
+  - semester: "Winter 2016"
+    syllabus: "https://docs.google.com/document/d/1gvk2xpxdXihilI0e_pxTTp-hIaiO68YMtP_q_EBoiik/edit?usp=sharing"
+  - semester: "Winter 2013"
+    syllabus: "https://sites.google.com/a/umich.edu/si622w2013/"
+  - semester: "Winter 2012"
+    syllabus: "https://sites.google.com/site/si622winter2012/"
+  - semester: "Winter 2011"
+  - semester: "Winter 2010"
+  - semester: "Winter 2009"
+
+- name: "SI 710-4: Application-Oriented Research in HCI"
+  semesters:
+  - semester: "Fall 2015"
+    syllabus: "https://docs.google.com/document/d/1KSHAjeTjOBLNdIu6VfuZ8uYN0E7_86v7xL-JZbEFJdU/edit?usp=sharing"
+
+- name: "SI 588: Fundamentals of Human Behavior"
+  semesters:
+  - semester: "Fall 2012"
+    syllabus: "https://sites.google.com/a/umich.edu/si-588-fall-2012/"
+  - semester: "Fall 2011"
+    syllabus: "https://sites.google.com/site/si688f11/"
+  - semester: "Fall 2010"
+  - semester: "Fall 2009"
+
+- name: "SI 612: Pervasive Interaction Design"
+  semesters:
+  - semester: "Winter 2014"
+    syllabus: "https://sites.google.com/a/umich.edu/si-612-winter-2014/"
+  - semester: "Winter 2012"
+    syllabus: "https://sites.google.com/site/pixdwinter2012/"
+  - semester: "Winter 2011"
