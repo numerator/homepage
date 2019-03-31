@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="container-fluid"> <!-- container for the whole page -->
+      <div class="row"> <!-- row for the whole page -->
+        <div class="col-md-2" id="left-bar">
+          {% include sidebar.html %}
+        </div> <!-- left bar -->
+
+        <div class="col-md-10" id="right-content-area">
+
+          <div class="center-align">
+            <h1>{{page.header}}</h1>
+            <p>For use in talk announcements and the like...</p>
+            <br/>
+            <p>
+              <img width=600 src="img/{{site.data.me.hi_res_landscape}}"/><br/>
+              Landscape: 2100x1500 (Right-click to download full size)
+            </p>
+            <p>
+              <img width=400 src="img/{{site.data.me.hi_res_portrait}}"/><br/>
+              Portrait: 1500x2100 (Right-click to download full size)
+            </p>
+            <p>
+              <img width=400 src="img/{{site.data.me.hi_res_square}}"/><br/>
+              Square: 1300x1300 (Right-click to download full size)
+            </p>
+
+          </div>
+          {% include footer.html %}
+        </div>
+
+        </div>
+      </div>
+
+
+      {% include scriptincludes.html %}
+
+
+    </body>
+
+  </html>

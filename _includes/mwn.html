@@ -1,0 +1,20 @@
+<a href="/">
+  <img class="main-photo"
+       src="img/{{ site.data.me.photo }}"/>
+</a>
+<br/>
+
+<h2>
+  {% if page.label != "index" %}
+    <a href="/">
+  {% endif %}
+    {{site.data.me.name}}
+  {% if page.label != "index" %}
+    </a>
+  {% endif %}
+</h2>
+{{site.data.me.title}} <br/>
+{{site.data.me.affiliation}}<br/>
+{{site.data.me.affiliation2}} <br/>
+{{site.data.me.org}}<br/>
+<br/>

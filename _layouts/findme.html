@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="container-fluid"> <!-- container for the whole page -->
+      <div class="row"> <!-- row for the whole page -->
+        <div class="col-md-2" id="left-bar">
+          {% include sidebar.html %}
+        </div> <!-- left bar -->
+
+        <div class="col-md-10" id="right-content-area">
+
+          <h1>How to find me</h1>
+
+          <div class="row" id="step1">
+            <div class="col-md-4">
+
+              <h2>Step 1: Find North Quad</h2>
+              <p class="headroom">
+              North Quad is on State St. between Huron and Washington.
+              <a href="{{site.data.me.building_locurl}}">Google Maps</a>
+              can get you here by car, bus, or foot.
+              </p>
+
+              <p>
+              If you’re driving, 2 hour street parking is sometimes available.
+              The closest public parking garage is the
+              <a href="{{site.data.me.building_locurl}}">Maynard Street garage</a>.
+              If you have a Blue or Gold tag, the closest U-M garages are
+              Thayer, Fletcher, and Palmer (in that order).
+              </p>
+
+
+            </div>
+            <div class="col-md-6" class="headroom">
+              <img src="img/findNQ.jpg" width="400"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10" class="headroom">
+              &nbsp;
+            </div>
+          </div>
+          <div class="row" id="step2">
+            <div class="col-md-4">
+              <h2>Step 2: Find UMSI</h2>
+              <p class="headroom">
+              Finding North Quad is only half the battle. Now you need to find
+              the “Academic Tower,” which is the southernmost of the two “L”s
+              that make up North Quad. Enter the courtyard, then enter the doors
+              at the center of the south building. Take the elevators you
+              see to the 4th floor.
+              </p>
+
+            </div>
+            <div class="col-md-6" class="headroom">
+              <img src="img/findUMSI.jpg" width="400"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10" class="headroom">
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="row" id="step3">
+            <div class="col-md-4">
+              <h2>Step 3: Find my office (4380)</h2>
+              <p class="headroom">
+
+                When you exit the elevator, take a left (the only plausible
+                direction) and then take a right to head down the hallway.
+                Enter the first door on your right, which puts you in a large
+                collaboration space (4370) with tables, chairs, couches, and
+                stuff. My office is along the back wall of this space,
+                towards the far end from where you would have entered.
+
+              </p>
+
+            </div>
+            <div class="col-md-6" class="headroom">
+              <img src="img/comingsoon.jpg" width="400"/>
+            </div>
+
+
+          </div>
+
+          {% include footer.html %}
+        </div>
+
+        </div>
+      </div>
+
+
+      {% include scriptincludes.html %}
+
+
+    </body>
+
+  </html>

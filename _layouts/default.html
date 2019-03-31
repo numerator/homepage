@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <div class="container-fluid"> <!-- container for the whole page -->
+      <div class="row"> <!-- row for the whole page -->
+        <div class="col-md-2" id="left-bar">
+
+          {% include mwn.html %}
+
+          {% include assoc.html %}
+
+
+        </div> <!-- left bar -->
+
+        <div class="col-md-10" id="right-content-area">
+          <h1>{{page.header}}</h1>
+
+          <p>
+            {{page.content}}
+          </p>
+          {% include footer.html %}
+
+        </div>
+
+      </div>
+    </div>
+
+
+    {% include scriptincludes.html %}
+
+
+  </body>
+
+</html>

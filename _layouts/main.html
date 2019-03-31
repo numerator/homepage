@@ -1,22 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  {% include head.html %}
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-
-    <title> {{ page.title }} </title> <!-- change to use site vars -->
-
-  </head>
 
   <body>
 
@@ -28,33 +13,7 @@
     <div class="container-fluid"> <!-- container for the whole page -->
       <div class="row"> <!-- row for the whole page -->
         <div class="col-md-2" id="left-bar">
-
-          <img class="main-photo"
-               src="img/{{ site.data.me.photo }}"/>
-          <br/>
-
-          <h2>{{site.data.me.name}}</h2>
-          {{site.data.me.title}} <br/>
-          {{site.data.me.affiliation}}<br/>
-          {{site.data.me.affiliation2}} <br/>
-          {{site.data.me.org}}<br/>
-          <br/>
-
-          <h2>Contact</h2>
-          e: {{site.data.me.contact_email}} <br/>
-          o: {{site.data.me.contact_office}} <br/>
-          p: {{site.data.me.contact_phone}} <br/>
-          <br/>
-
-          <h2>Office Hours</h2>
-          {{site.data.officehours.semester}}: {{site.data.officehours.daytime}}<br/>
-          <a href="{{site.data.officehours.bookingurl}}">Book me!</a><br/>
-          <br/>
-
-          <h2>Associations</h2>
-          {% for assoc in site.data.assoc %}
-            <a target="_blank" href="{{assoc.url}}">{{assoc.displayname}}</a><br/>
-          {% endfor %}
+          {% include sidebar.html %}
 
         </div> <!-- left bar -->
 
@@ -119,15 +78,7 @@
                 </div>
 
                 {% endfor %}
-                <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. -->
+
               </p>
 
               <h1>MOOCs</h1>
@@ -168,8 +119,10 @@
             <div id="selected-pubs" class="col-md-12">
               <h1>Selected Publications</h1>
               <p>
-              {% octicon link-external height:16 %} = publisher's URL<br/>
-              {% octicon file-pdf height:16 %} = authors' version (full text pdf)
+              For a complete list of publications, see my Google Scholar Profile or my CV.<br/>
+
+              {% octicon link-external height:16 %} = publisher's URL
+              {% octicon file-pdf height:16 %} = authors' version (full text pdf)<br/>
             </p>
 
               {% for pubcat in site.data.pubcats %}
@@ -195,30 +148,15 @@
               {% endfor %}
 
             </div> <!-- selected pubs -->
-
-            <div class="centered center-align col-md-12" id="footer">
-              <hr width="50%"/>
-              Built on March 2, 2019 using Jekyll 3.x <br/>
-              Copyright 2019 - Mark W. Newman
-            </div> <!-- footer -->
+            {% include footer.html %}
 
           </div> <!-- single column row -->
         </div> <!-- right-content-area -->
       </div> <!-- whole page row -->
     </div> <!-- whole page container -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- Why is this at the bottom>? Seems like it should be earlier? -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+    {% include scriptincludes.html %}
+
   </body>
 
 </html>
