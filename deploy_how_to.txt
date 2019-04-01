@@ -1,0 +1,7 @@
+How to update site
+1. Git pull
+2. Make changes
+3. Test with Jekyll serve until happy
+4. Jekyll build
+5. ./push.sh
+6. Git add, commit, push
