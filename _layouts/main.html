@@ -12,14 +12,14 @@
 
     <div class="container-fluid"> <!-- container for the whole page -->
       <div class="row"> <!-- row for the whole page -->
-        <div class="col-md-2" id="left-bar">
+        <div class="col-md-2 col-sm-4" id="left-bar">
           {% include sidebar.html %}
 
         </div> <!-- left bar -->
 
-        <div class="col-md-10" id="right-content-area">
+        <div class="col-md-10 col-sm-8" id="right-content-area">
           <div class="row" id="two-column-area">
-            <div class="col-md-6" id="left-column">
+            <div class="col-md-6 col-sm-12" id="left-column">
               <h1>About Me</h1>
               <p>
                 {{ aboutme | markdownify }}
@@ -47,7 +47,7 @@
 
             </div> <!-- left column -->
 
-            <div class="col-md-6" id="right-column">
+            <div class="col-md-6 col-sm-12" id="right-column">
               <h1>Teaching</h1>
               <p>
                 {{ teaching | markdownify }}

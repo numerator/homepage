@@ -26,7 +26,23 @@
   text-justify: inter-word;
 }
 
+@media screen and (min-width: 992px) {
 
+  #left-column {
+    padding-left: 4%;
+    padding-right: 2%;
+  }
+
+  #right-column {
+    padding-left: 2%;
+    padding-right: 4%;
+  }
+
+  #single-column-area {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
 
 a {
   color: #336699;
