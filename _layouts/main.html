@@ -124,7 +124,7 @@
                or my <a href="files/cv.pdf" target="_blank">CV</a>.<br/>
 
               {% octicon link-external height:16 %} = publisher's URL
-              {% octicon file-pdf height:16 %} = authors' version (full text pdf)<br/>
+              {% octicon file height:16 %} = authors' version (full text pdf)<br/>
             </p>
 
               {% for pubcat in site.data.pubcats %}
@@ -141,7 +141,7 @@
                               <a target="_blank"  href="{{pub.puburl}}">{% octicon link-external height:16 %}</a>
                            {% endif %}
                            {% if pub.fulltext %}
-                              <a target="_blank" href="/fulltext/{{pub.fulltext}}">{% octicon file-pdf height:16 %}</a>
+                              <a target="_blank" href="/fulltext/{{pub.fulltext}}">{% octicon file height:16 %}</a>
                            {% endif %}
                         </p>
                       {% endif %}
